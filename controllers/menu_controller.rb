@@ -96,7 +96,9 @@ class MenuController
     if selection <= @address_book.entries.size
       puts "\n"
       puts @address_book.entries[selection - 1].to_s
-      puts "\n\n"
+      puts "\n\nPress 'enter' to return to the main menu"
+      gets.chomp
+      system "clear"
 
     else
       system "clear"
